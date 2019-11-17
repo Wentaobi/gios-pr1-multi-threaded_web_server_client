@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="gflib"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gflib">
+				<Option output="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/gflib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/."/>
+					<Add directory="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root"/>
+					<Add directory="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses"/>
+					<Add directory="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses/ud923"/>
+					<Add directory="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses/ud923/filecorpus"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 gflib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gflib/fast">
+				<Option output="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/gflib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/."/>
+					<Add directory="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root"/>
+					<Add directory="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses"/>
+					<Add directory="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses/ud923"/>
+					<Add directory="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses/ud923/filecorpus"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 gflib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/Makefile">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/content.c">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/content.h">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/content.txt">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/gf-student.h">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/gfclient-student.h">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/gfclient.c">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/gfclient.h">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/gfclient_download.c">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/gfserver-student.h">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/gfserver.c">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/gfserver.h">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/gfserver_main.c">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/handler.o">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/handler_noasan.o">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses/ud923/filecorpus/1kb-sample-file-0.png">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses/ud923/filecorpus/1kb-sample-file-1.html">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses/ud923/filecorpus/1kb-sample-file-2.png">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses/ud923/filecorpus/1kb-sample-file-3.jpg">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses/ud923/filecorpus/1kb-sample-file-4.png">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses/ud923/filecorpus/moranabovejacksonlake.jpg">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses/ud923/filecorpus/paraglider.jpg">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses/ud923/filecorpus/road.jpg">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/server_root/courses/ud923/filecorpus/yellowstone.jpg">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/workload.c">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/workload.h">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/workload.txt">
+			<Option target="gflib"/>
+		</Unit>
+		<Unit filename="/Users/abhisheksurya/CS6200_GIOS/gios-spr-2018-pr1/gflib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

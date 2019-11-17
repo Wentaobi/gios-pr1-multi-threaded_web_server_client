@@ -1,0 +1,44 @@
+{
+    "tests": [
+        {
+            "output": {
+                "client_returncode": 0,
+                "server_console": "",
+                "passfail": "failed",
+                "server_returncode": null,
+                "client_console": ""
+            },
+            "traceback": "Traceback (most recent call last):\n  File \"/home/vmuser_vhofctjs/gios.py\", line 249, in func_wrapper\n    ans = func(self)\n  File \"run.py\", line 67, in test_client\n    self.assertEqual(os.path.getsize(outputFileName), os.path.getsize('file.txt'),\n  File \"/usr/lib/python2.7/genericpath.py\", line 57, in getsize\n    return os.stat(filename).st_size\nOSError: [Errno 2] No such file or directory: 'loquatious.txt'\n",
+            "description": "Tests that the client accurately saves the file sent from the server."
+        },
+        {
+            "output": {
+                "server_console": "make: Warning: File 'transferserver.c' has modification time 3204 s in the future\ngcc -o transferserver -Wall -Werror --std=gnu99 -g3 -fsanitize=address -fno-omit-frame-pointer -Wno-format-security transferserver.c -lpthread -static-libasan\ntransferserver.c: In function 'main':\ntransferserver.c:94:61: error: pointer targets in passing argument 3 of 'accept' differ in signedness [-Werror=pointer-sign]\n   newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, &clilen);\n                                                             ^\nIn file included from transferserver.c:8:0:\n/usr/include/x86_64-linux-gnu/sys/socket.h:243:12: note: expected 'socklen_t * restrict {aka unsigned int * restrict}' but argument is of type 'int *'\n extern int accept (int __fd, __SOCKADDR_ARG __addr,\n            ^\ncc1: all warnings being treated as errors\nTestMakefile:23: recipe for target 'transferserver' failed\nmake: *** [transferserver] Error 1\n",
+                "passfail": "failed",
+                "server_returncode": 2
+            },
+            "traceback": "Traceback (most recent call last):\n  File \"/home/vmuser_vhofctjs/gios.py\", line 249, in func_wrapper\n    ans = func(self)\n  File \"run.py\", line 19, in test_server_compiles\n    super(TransferCompileTest, self).test_server_compiles()\n  File \"/home/vmuser_vhofctjs/gios.py\", line 49, in test_server_compiles\n    self.assertEqual(p.returncode, 0, \"Your server code did not compile cleanly.\")\nAssertionError: Your server code did not compile cleanly.\n",
+            "description": "Tests that the server compiles"
+        },
+        {
+            "output": {
+                "client_returncode": -1,
+                "server_console": "",
+                "passfail": "failed",
+                "server_returncode": -1,
+                "client_console": ""
+            },
+            "traceback": "Traceback (most recent call last):\n  File \"/home/vmuser_vhofctjs/gios.py\", line 249, in func_wrapper\n    ans = func(self)\n  File \"run.py\", line 85, in test_server\n    self.compile_server()\n  File \"/home/vmuser_vhofctjs/gios.py\", line 165, in compile_server\n    self.assertEqual(returncode, 0, \"Your server code did not compile cleanly.\")\nAssertionError: Your server code did not compile cleanly.\n",
+            "description": "Tests that the server accurately sends the file to the client."
+        },
+        {
+            "output": {
+                "client_returncode": 0,
+                "passfail": "passed",
+                "client_console": "gcc -o transferclient -Wall -Werror --std=gnu99 -g3 -fsanitize=address -fno-omit-frame-pointer -Wno-format-security transferclient.c -lpthread -static-libasan\n"
+            },
+            "traceback": "",
+            "description": "Tests that the client compiles"
+        }
+    ]
+}

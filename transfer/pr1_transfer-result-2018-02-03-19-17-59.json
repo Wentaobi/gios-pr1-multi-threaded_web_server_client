@@ -1,0 +1,44 @@
+{
+    "tests": [
+        {
+            "output": {
+                "client_returncode": 1,
+                "server_console": "",
+                "passfail": "failed",
+                "server_returncode": null,
+                "client_console": "Filename loquatious.txt\n*Filename 108\nReceived bytes 256\n=================================================================\n==64==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7fffa4afe530 at pc 0x000000448179 bp 0x7fffa4afe240 sp 0x7fffa4afd9b8\nREAD of size 263 at 0x7fffa4afe530 thread T0\n    #0 0x448178 in printf_common(void*, char const*, __va_list_tag*) [clone .isra.6] (/home/vmuser_vunsltfg/workspace/transferclient+0x448178)\n    #1 0x448b5c in vfprintf (/home/vmuser_vunsltfg/workspace/transferclient+0x448b5c)\n    #2 0x448c89 in __interceptor_fprintf (/home/vmuser_vunsltfg/workspace/transferclient+0x448c89)\n    #3 0x4b0f62 in main /home/vmuser_vunsltfg/workspace/transferclient.c:137\n    #4 0x7f862adf382f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x2082f)\n    #5 0x4054a8 in _start (/home/vmuser_vunsltfg/workspace/transferclient+0x4054a8)\n\nAddress 0x7fffa4afe530 is located in stack of thread T0 at offset 352 in frame\n    #0 0x4b058f in main /home/vmuser_vunsltfg/workspace/transferclient.c:35\n\n  This frame has 2 object(s):\n    [32, 48) 'serv_addr'\n    [96, 352) 'buffer' <== Memory access at offset 352 overflows this variable\nHINT: this may be a false positive if your program uses some custom stack unwind mechanism or swapcontext\n      (longjmp and C++ exceptions *are* supported)\nSUMMARY: AddressSanitizer: stack-buffer-overflow ??:0 printf_common(void*, char const*, __va_list_tag*) [clone .isra.6]\nShadow bytes around the buggy address:\n  0x100074957c50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  0x100074957c60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  0x100074957c70: 00 00 00 00 00 00 00 00 00 00 f1 f1 f1 f1 00 00\n  0x100074957c80: f4 f4 f2 f2 f2 f2 00 00 00 00 00 00 00 00 00 00\n  0x100074957c90: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n=>0x100074957ca0: 00 00 00 00 00 00[f3]f3 f3 f3 f3 f3 f3 f3 00 00\n  0x100074957cb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  0x100074957cc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  0x100074957cd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  0x100074957ce0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  0x100074957cf0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\nShadow byte legend (one shadow byte represents 8 application bytes):\n  Addressable:           00\n  Partially addressable: 01 02 03 04 05 06 07 \n  Heap left redzone:       fa\n  Heap right redzone:      fb\n  Freed heap region:       fd\n  Stack left redzone:      f1\n  Stack mid redzone:       f2\n  Stack right redzone:     f3\n  Stack partial redzone:   f4\n  Stack after return:      f5\n  Stack use after scope:   f8\n  Global redzone:          f9\n  Global init order:       f6\n  Poisoned by user:        f7\n  Container overflow:      fc\n  Array cookie:            ac\n  Intra object redzone:    bb\n  ASan internal:           fe\n==64==ABORTING\n"
+            },
+            "traceback": "Traceback (most recent call last):\n  File \"/home/vmuser_vunsltfg/gios.py\", line 249, in func_wrapper\n    ans = func(self)\n  File \"run.py\", line 66, in test_client\n    ['./transferclient', '-p', self.port, '-s', 'localhost', '-o', outputFileName])\n  File \"/home/vmuser_vunsltfg/gios.py\", line 196, in converse\n    self.assertEqual(self.p_client.poll(), 0, \"The client exited abnormally. (exit code {})\".format(self.p_client.poll()))\nAssertionError: The client exited abnormally. (exit code 1)\n",
+            "description": "Tests that the client accurately saves the file sent from the server."
+        },
+        {
+            "output": {
+                "client_returncode": 0,
+                "server_console": "Filename before file.txt\nFilename file.txt\n&Filename 102\nRead bytes 4096\nBuffer size 4096\n=================================================================\n==74==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7fff5a632340 at pc 0x000000448179 bp 0x7fff5a6311b0 sp 0x7fff5a630928\nREAD of size 4098 at 0x7fff5a632340 thread T0\n    #0 0x448178 in printf_common(void*, char const*, __va_list_tag*) [clone .isra.6] (/home/vmuser_vunsltfg/workspace/transferserver+0x448178)\n    #1 0x448b5c in vfprintf (/home/vmuser_vunsltfg/workspace/transferserver+0x448b5c)\n    #2 0x448c89 in __interceptor_fprintf (/home/vmuser_vunsltfg/workspace/transferserver+0x448c89)\n    #3 0x4b1026 in processreq /home/vmuser_vunsltfg/workspace/transferserver.c:157\n    #4 0x4b0b37 in main /home/vmuser_vunsltfg/workspace/transferserver.c:115\n    #5 0x7fe98f1f282f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x2082f)\n    #6 0x4054a8 in _start (/home/vmuser_vunsltfg/workspace/transferserver+0x4054a8)\n\nAddress 0x7fff5a632340 is located in stack of thread T0 at offset 4128 in frame\n    #0 0x4b0ce8 in processreq /home/vmuser_vunsltfg/workspace/transferserver.c:132\n\n  This frame has 1 object(s):\n    [32, 4128) 'buffer' <== Memory access at offset 4128 overflows this variable\nHINT: this may be a false positive if your program uses some custom stack unwind mechanism or swapcontext\n      (longjmp and C++ exceptions *are* supported)\nSUMMARY: AddressSanitizer: stack-buffer-overflow ??:0 printf_common(void*, char const*, __va_list_tag*) [clone .isra.6]\nShadow bytes around the buggy address:\n  0x10006b4be410: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  0x10006b4be420: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  0x10006b4be430: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  0x10006b4be440: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  0x10006b4be450: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n=>0x10006b4be460: 00 00 00 00 00 00 00 00[f3]f3 f3 f3 f3 f3 f3 f3\n  0x10006b4be470: 00 00 00 00 00 00 00 00 00 00 00 00 f1 f1 f1 f1\n  0x10006b4be480: 04 f4 f4 f4 f2 f2 f2 f2 00 00 f4 f4 f2 f2 f2 f2\n  0x10006b4be490: 00 00 f4 f4 f3 f3 f3 f3 00 00 00 00 00 00 00 00\n  0x10006b4be4a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  0x10006b4be4b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\nShadow byte legend (one shadow byte represents 8 application bytes):\n  Addressable:           00\n  Partially addressable: 01 02 03 04 05 06 07 \n  Heap left redzone:       fa\n  Heap right redzone:      fb\n  Freed heap region:       fd\n  Stack left redzone:      f1\n  Stack mid redzone:       f2\n  Stack right redzone:     f3\n  Stack partial redzone:   f4\n  Stack after return:      f5\n  Stack use after scope:   f8\n  Global redzone:          f9\n  Global init order:       f6\n  Poisoned by user:        f7\n  Container overflow:      fc\n  Array cookie:            ac\n  Intra object redzone:    bb\n  ASan internal:           fe\n==74==ABORTING\n",
+                "passfail": "failed",
+                "server_returncode": null,
+                "client_console": ""
+            },
+            "traceback": "Traceback (most recent call last):\n  File \"/home/vmuser_vunsltfg/gios.py\", line 249, in func_wrapper\n    ans = func(self)\n  File \"run.py\", line 93, in test_server\n    \"The file that our client saved is a different size than the file your server sent.\\n\")\nAssertionError: The file that our client saved is a different size than the file your server sent.\n\n",
+            "description": "Tests that the server accurately sends the file to the client."
+        },
+        {
+            "output": {
+                "client_returncode": 0,
+                "passfail": "passed",
+                "client_console": "make: Warning: File 'transferclient.c' has modification time 3234 s in the future\ngcc -o transferclient -Wall -Werror --std=gnu99 -g3 -fsanitize=address -fno-omit-frame-pointer -Wno-format-security transferclient.c -lpthread -static-libasan\nmake: warning:  Clock skew detected.  Your build may be incomplete.\n"
+            },
+            "traceback": "",
+            "description": "Tests that the client compiles"
+        },
+        {
+            "output": {
+                "server_console": "make: Warning: File 'transferserver.c' has modification time 1498 s in the future\ngcc -o transferserver -Wall -Werror --std=gnu99 -g3 -fsanitize=address -fno-omit-frame-pointer -Wno-format-security transferserver.c -lpthread -static-libasan\nmake: warning:  Clock skew detected.  Your build may be incomplete.\n",
+                "passfail": "passed",
+                "server_returncode": 0
+            },
+            "traceback": "",
+            "description": "Tests that the server compiles"
+        }
+    ]
+}
